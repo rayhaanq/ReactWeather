@@ -1,25 +1,18 @@
 const React = require('react');
 const ReactDOM = require('react-dom');
+const Main = require('Main');
+import { HashRouter, Route } from 'react-router-dom';
 
 
-let objOne = {
-  name: "Rayhaan",
-  location: "UK"
-};
-
-let objTwo = {
-  age: 21,
-  ...objOne
-};
-
-console.log(objTwo);
 
 ReactDOM.render(
 
+  <HashRouter>
 
-    <h1>Boilerplate app</h1>,
+    <Route path="/" component={Main}>
+
+    </Route>
+  </HashRouter>,
     document.getElementById('app')
-
-
 
 );

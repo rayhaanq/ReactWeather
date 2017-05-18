@@ -13,12 +13,15 @@
   "author": "Rayhaan Quazi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rayhaanq/ReactWeather/issues"},
+    "url": "https://github.com/rayhaanq/ReactWeather/issues"
+  },
   "homepage": "https://github.com/rayhaanq/ReactWeather#readme",
   "dependencies": {
     "express": "^4.15.2",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
