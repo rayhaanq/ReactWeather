@@ -1,4 +1,5 @@
 const React = require('react');
+const {Link} = require('react-router');
 
 let Nav = React.createClass({
 
@@ -6,11 +7,16 @@ let Nav = React.createClass({
 
     return (
 
-      <h1>Nav Component</h1>
+      <div>
+
+        <h1>Nav Component</h1>
+
+      </div>
+
+
 
     );
   }
 });
-
 
 module.exports = Nav;

@@ -11,6 +11,7 @@ let Main = React.createClass({
 
         <Nav/>
         <h1>MainComponent</h1>
+        {this.props.children}
 
       </div>
 
