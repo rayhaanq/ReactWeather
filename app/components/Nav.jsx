@@ -1,5 +1,5 @@
 const React = require('react');
-const {Link} = require('react-router');
+import {Link} from 'react-router-dom';
 
 let Nav = React.createClass({
 
@@ -10,6 +10,8 @@ let Nav = React.createClass({
       <div>
 
         <h1>Nav Component</h1>
+        <Link to="/">Get Weather</Link>
+        <Link to="/about">About</Link>
 
       </div>
 
