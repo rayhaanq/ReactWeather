@@ -12,6 +12,7 @@ let Nav = React.createClass({
         <h1>Nav Component</h1>
         <Link to="/">Get Weather</Link>
         <Link to="/about">About</Link>
+        <Link to="/examples">Examples</Link>
 
       </div>
 
