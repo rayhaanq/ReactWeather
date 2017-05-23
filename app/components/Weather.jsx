@@ -1,4 +1,7 @@
 const React = require('react');
+const WeatherForm = require('WeatherForm');
+const WeatherMessage = require('WeatherMessage');
+
 
 class Weather extends React.Component{
 
@@ -6,10 +9,10 @@ class Weather extends React.Component{
     super(props);
 
     this.state = {
-      message: "test"
+      message: ""
     };
 
-    this.onFormSubmit = this.onFormSubmit.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
 
   }
   render() {
@@ -18,26 +21,17 @@ class Weather extends React.Component{
 
       <div>
 
-        <form onSubmit={this.onFormSubmit}>
+        <WeatherForm onNewCity={this.handleSubmit}/>
 
-          <input type="text" ref="messageInput" placeholder="Enter city..."></input>
-          <button>Get Weather</button>
-
-        </form>
-
-        <div>
-          {this.state.message}
-        </div>
+        <WeatherMessage message={this.state.message}/>
 
       </div>
 
     );
   }
 
-  onFormSubmit(e){
-    this.setState({
-      message: this.refs.messageInput.value});
-    console.log(this.refs.messageInput.value);
+  handleSubmit(updates){
+    this.setState(updates);
   };
 }
 
