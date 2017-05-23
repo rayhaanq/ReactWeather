@@ -1,8 +1,8 @@
 const React = require('react');
 
-let Examples = React.createClass({
+class Examples extends React.Component{
 
-  render: function(){
+  render(){
 
 
     return (
@@ -18,6 +18,6 @@ let Examples = React.createClass({
     );
   }
 
-});
+}
 
 module.exports = Examples;
