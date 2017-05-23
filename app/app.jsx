@@ -5,7 +5,7 @@ import { HashRouter, Route } from 'react-router-dom';
 const Main = require('Main');
 const Weather = require('Weather');
 const About = require('About');
-
+const Examples = require('Examples');
 
 
 ReactDOM.render(
@@ -16,6 +16,7 @@ ReactDOM.render(
       <Route path="/" component={Main}/>
       <Route exact  path="/" component={Weather}/>
       <Route path="/about" component={About}/>
+      <Route path="/examples" component={Examples}/>
 
     </div>
 
