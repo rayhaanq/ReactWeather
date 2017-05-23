@@ -1,19 +1,44 @@
 const React = require('react');
 
-let Weather = React.createClass({
+class Weather extends React.Component{
 
-  render: function() {
+  constructor(props){
+    super(props);
+
+    this.state = {
+      message: "test"
+    };
+
+    this.onFormSubmit = this.onFormSubmit.bind(this);
+
+  }
+  render() {
 
     return (
 
       <div>
 
-        <h1>Weather Component</h1>
+        <form onSubmit={this.onFormSubmit}>
+
+          <input type="text" ref="messageInput" placeholder="Enter city..."></input>
+          <button>Get Weather</button>
+
+        </form>
+
+        <div>
+          {this.state.message}
+        </div>
 
       </div>
 
     );
   }
-});
+
+  onFormSubmit(e){
+    this.setState({
+      message: this.refs.messageInput.value});
+    console.log(this.refs.messageInput.value);
+  };
+}
 
 module.exports = Weather;

@@ -1,9 +1,9 @@
 const React = require('react');
 import {Link} from 'react-router-dom';
 
-let Nav = React.createClass({
+class Nav extends React.Component{
 
-  render: function() {
+  render() {
 
     return (
 
@@ -19,6 +19,6 @@ let Nav = React.createClass({
 
     );
   }
-});
+}
 
 module.exports = Nav;

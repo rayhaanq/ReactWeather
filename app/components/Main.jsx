@@ -1,9 +1,9 @@
 const React = require('react');
 const Nav = require('Nav');
 
-let Main = React.createClass({
+class Main extends React.Component{
 
-  render: function(){
+  render(){
 
     return (
 
@@ -19,6 +19,6 @@ let Main = React.createClass({
 
 }
 
-});
+}
 
 module.exports = Main;

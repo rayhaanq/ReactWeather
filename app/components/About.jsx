@@ -1,8 +1,8 @@
 const React = require('react');
 
-let About = React.createClass({
+class About extends React.Component{
 
-  render: function () {
+  render() {
 
 
     return (
@@ -13,6 +13,6 @@ let About = React.createClass({
       </div>
     );
   }
-});
+}
 
 module.exports = About;
