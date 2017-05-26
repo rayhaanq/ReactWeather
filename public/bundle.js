@@ -11885,8 +11885,7 @@ var Weather = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (Weather.__proto__ || Object.getPrototypeOf(Weather)).call(this, props));
 
     _this.state = {
-      temp: "",
-      location: ""
+      isLoading: false
     };
 
     _this.handleSubmit = _this.handleSubmit.bind(_this);
@@ -11898,11 +11897,26 @@ var Weather = function (_React$Component) {
     key: 'render',
     value: function render() {
 
+      var that = this;
+
+      function renderMessage() {
+        if (that.state.isLoading) {
+          return React.createElement(
+            'h2',
+            null,
+            'Loading data...'
+          );
+        } else if (that.state.temp && that.state.location) {
+
+          return React.createElement(WeatherMessage, { temp: that.state.temp, location: that.state.location });
+        }
+      }
+
       return React.createElement(
         'div',
         null,
         React.createElement(WeatherForm, { onNewCity: this.handleSubmit }),
-        React.createElement(WeatherMessage, { temp: this.state.temp, location: this.state.location })
+        renderMessage()
       );
     }
   }, {
@@ -11911,14 +11925,24 @@ var Weather = function (_React$Component) {
 
       var that = this;
 
+      this.setState({
+        isLoading: true
+      });
+
       OpenWeatherMap.getTemp(location).then(function (temp) {
 
         that.setState({
           location: location,
-          temp: temp
+          temp: temp,
+          isLoading: false
+
         });
       }).catch(function (error) {
         alert(error.message);
+
+        that.setState({
+          isLoading: false
+        });
       });
     }
   }]);

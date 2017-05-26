@@ -10,8 +10,7 @@ class Weather extends React.Component{
     super(props);
 
     this.state = {
-      temp: "",
-      location: ""
+      isLoading: false
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -19,13 +18,29 @@ class Weather extends React.Component{
   }
   render() {
 
+    let that = this;
+
+    function renderMessage(){
+      if (that.state.isLoading){
+        return (
+          <h2>Loading data...</h2>
+        );
+      } else if(that.state.temp && that.state.location){
+
+        return (
+          <WeatherMessage temp={that.state.temp} location={that.state.location}/>
+        );
+
+      }
+    }
+
     return (
 
       <div>
 
         <WeatherForm onNewCity={this.handleSubmit}/>
 
-        <WeatherMessage temp={this.state.temp} location={this.state.location}/>
+        {renderMessage()}
 
       </div>
 
@@ -36,16 +51,26 @@ class Weather extends React.Component{
 
     let that = this;
 
+    this.setState({
+      isLoading: true
+    });
+
     OpenWeatherMap.getTemp(location).then(function(temp){
 
       that.setState({
         location: location,
-        temp: temp
+        temp: temp,
+        isLoading: false
+
       });
 
 
     }).catch(function(error){
       alert(error.message);
+
+      that.setState({
+        isLoading: false
+      });
     });
   };
 }
