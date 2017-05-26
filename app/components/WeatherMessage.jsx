@@ -7,7 +7,7 @@ class WeatherMessage extends React.Component  {
     return (
 
       <div>
-        {this.props.message}
+        It is {this.props.temp} in {this.props.location}
       </div>
 
     );
@@ -15,7 +15,8 @@ class WeatherMessage extends React.Component  {
 }
 
 WeatherMessage.defaultProps = {
-  message: ""
+  temp: "",
+  location: ""
 };
 
 module.exports = WeatherMessage;

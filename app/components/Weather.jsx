@@ -1,6 +1,7 @@
 const React = require('react');
 const WeatherForm = require('WeatherForm');
 const WeatherMessage = require('WeatherMessage');
+const OpenWeatherMap = require('OpenWeatherMap');
 
 
 class Weather extends React.Component{
@@ -9,7 +10,8 @@ class Weather extends React.Component{
     super(props);
 
     this.state = {
-      message: ""
+      temp: "",
+      location: ""
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -23,15 +25,28 @@ class Weather extends React.Component{
 
         <WeatherForm onNewCity={this.handleSubmit}/>
 
-        <WeatherMessage message={this.state.message}/>
+        <WeatherMessage temp={this.state.temp} location={this.state.location}/>
 
       </div>
 
     );
   }
 
-  handleSubmit(updates){
-    this.setState(updates);
+  handleSubmit(location){
+
+    let that = this;
+
+    OpenWeatherMap.getTemp(location).then(function(temp){
+
+      that.setState({
+        location: location,
+        temp: temp
+      });
+
+
+    }).catch(function(error){
+      alert(error.message);
+    });
   };
 }
 

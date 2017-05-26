@@ -2,12 +2,15 @@ const React = require('react');
 
 class WeatherForm extends React.Component{
 
+
   constructor(props){
     super(props);
 
     this.onFormSubmit = this.onFormSubmit.bind(this);
 
   }
+
+
 
   render(){
 
@@ -27,17 +30,18 @@ class WeatherForm extends React.Component{
   onFormSubmit(e){
     e.preventDefault();
 
-    let message = this.refs.messageInput.value;
+    let location = this.refs.messageInput.value;
+
     let updates = {};
 
-    if(message.length > 0){
+    if(location.length > 0){
+      updates.location = location;
 
-      updates.message = message;
       this.refs.messageInput.value = "";
 
     }
 
-    this.props.onNewCity(updates);
+    this.props.onNewCity(location);
 
   }
 
