@@ -55,9 +55,9 @@ class Weather extends React.Component{
       isLoading: true
     });
 
-    OpenWeatherMap.getTemp(location).then(function(temp){
+    OpenWeatherMap.getTemp(location).then((temp) => {
 
-      that.setState({
+      this.setState({
         location: location,
         temp: temp,
         isLoading: false
@@ -65,10 +65,10 @@ class Weather extends React.Component{
       });
 
 
-    }).catch(function(error){
+    }).catch((error) => {
       alert(error.message);
 
-      that.setState({
+      this.setState({
         isLoading: false
       });
     });
