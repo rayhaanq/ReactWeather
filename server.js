@@ -28,17 +28,19 @@ app.set('port', (process.env.PORT || 5000));
 
 app.use(express.static(__dirname + '/public'));
 
-//
-//
+
+app.get("*", function(req, res, next) {
+  res.redirect('http://' + req.headers.host + "/" + req.path);
+});
 //app.use(function(req, res, next){
 //
 //  if(req.secure){
 //    // redirect
 //    
-//    res.redirect('http://' + req.hostname + req.url);
-//  } else {
-//    return next();
+//    res.redirect('http://' + req.headers.host + "/" + req.path);
+//    
 //  }
+//  next();
 //  // handle port numbers if you need non defaults
 //  
 //});
