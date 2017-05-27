@@ -1,18 +1,13 @@
 const React = require('react');
 
-class About extends React.Component{
-
-  render() {
-
-
-    return (
+const About = (props) => {
+  return (
       <div>
 
         <h1>About Component</h1>
 
       </div>
     );
-  }
 }
 
 module.exports = About;

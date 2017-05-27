@@ -1,18 +1,15 @@
 const React = require('react');
 
-class WeatherMessage extends React.Component  {
 
-  render(){
-
-    return (
+const WeatherMessage = ({temp, location}) => {
+  return (
 
       <div>
-        It is {this.props.temp} in {this.props.location}
+        It is {temp} in {location}
       </div>
 
     );
-  }
-}
+};
 
 WeatherMessage.defaultProps = {
   temp: "",

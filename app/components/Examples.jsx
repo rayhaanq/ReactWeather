@@ -1,11 +1,8 @@
 const React = require('react');
 
-class Examples extends React.Component{
 
-  render(){
-
-
-    return (
+const Examples = (props) => {
+  return (
 
     <div>
 
@@ -13,11 +10,8 @@ class Examples extends React.Component{
         Examples Component
       </h2>
 
-
     </div>
-    );
-  }
-
-}
+  );
+};
 
 module.exports = Examples;
