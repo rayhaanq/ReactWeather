@@ -16,7 +16,7 @@ module.exports = {
       Examples: path.resolve(__dirname, 'app/components/Examples.jsx'),
       WeatherForm: path.resolve(__dirname, 'app/components/WeatherForm.jsx'),
       WeatherMessage: path.resolve(__dirname, 'app/components/WeatherMessage.jsx'),
-      OpenWeatherMap: path.resolve(__dirname, 'app/api/OpenWeatherMap.jsx')
+      Apixu: path.resolve(__dirname, 'app/api/Apixu.jsx')
     },
     extensions: ['*', '.js', '.jsx']
   },

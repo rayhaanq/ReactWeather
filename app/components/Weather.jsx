@@ -1,7 +1,7 @@
 const React = require('react');
 const WeatherForm = require('WeatherForm');
 const WeatherMessage = require('WeatherMessage');
-const OpenWeatherMap = require('OpenWeatherMap');
+const Apixu = require('Apixu');
 
 
 class Weather extends React.Component{
@@ -55,7 +55,7 @@ class Weather extends React.Component{
       isLoading: true
     });
 
-    OpenWeatherMap.getTemp(location).then((temp) => {
+    Apixu.getTemp(location).then((temp) => {
 
       this.setState({
         location: location,
