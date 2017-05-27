@@ -28,6 +28,21 @@ app.set('port', (process.env.PORT || 5000));
 
 app.use(express.static(__dirname + '/public'));
 
+//
+//
+//app.use(function(req, res, next){
+//
+//  if(req.secure){
+//    // redirect
+//    
+//    res.redirect('http://' + req.hostname + req.url);
+//  } else {
+//    return next();
+//  }
+//  // handle port numbers if you need non defaults
+//  
+//});
+
 // views is directory for all template files
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
