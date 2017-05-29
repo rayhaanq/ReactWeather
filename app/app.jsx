@@ -1,7 +1,7 @@
 const React = require('react');
 const ReactDOM = require('react-dom');
 import { HashRouter, Route } from 'react-router-dom';
-const css = require('./app.scss');
+const css = require('./styles/app.scss');
 
 const Main = require('Main');
 const Weather = require('Weather');

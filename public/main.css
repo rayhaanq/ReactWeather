@@ -46,26 +46,38 @@
   border-color: #2F80ED;
   border-radius: 0; }
   .btn-primary:hover {
-    background-color: white;
+    background-color: #fafafa;
     color: #2F80ED;
     border-color: #2A72D3; }
   .btn-primary:active, .btn-primary:focus {
     background-color: white;
     color: #2F80ED;
-    border-color: #2F80ED; }
+    border-color: #2F80ED;
+    box-shadow: 0 0 0 #000;
+    -webkit-box-shadow: 0 0 0 #000; }
   .btn-primary:active:focus {
     background-color: white;
     color: #2F80ED;
     border-color: #2F80ED; }
 
 .form-group {
-  padding-top: 50px; }
+  padding-top: 30px; }
 
 .form-control {
   border-radius: 0 !important; }
 
+.location {
+  text-transform: capitalize; }
+
+.alert {
+  margin-top: 20px; }
+
 h1 {
   font-size: 4em; }
+
+h2 {
+  font-size: 3em;
+  padding-top: 50px; }
 
 body {
   font-family: 'Open Sans', sans-serif;

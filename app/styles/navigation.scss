@@ -1,0 +1,59 @@
+.navbar-default{
+background: #56CCF2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+border:none;
+  border-radius: 0;
+  margin-bottom: 50px;
+}
+
+.navbar>.container .navbar-brand, .navbar-default .navbar-nav>li>a{
+  color:white;
+
+}
+
+.navbar-brand{
+  font-weight: 700;
+  
+}
+
+.navbar-default .navbar-nav>li>a{
+  opacity: 0.8;
+  
+  &:hover{
+    opacity: 1;
+    color: white;
+  }
+  
+}
+
+.navbar-default .navbar-nav>.active>a{
+  background-color: white;
+  opacity: 1;
+  
+  &:hover{
+    background-color: white;
+  }
+  &:active{
+    background-color: white;
+  }
+  
+  &:focus{
+    background-color: white;
+  }
+}
+
+.navbar-default .navbar-toggle{
+  
+  .icon-bar{
+      background-color: white;
+  }
+  
+  &:hover{
+    background-color: rgba(0,0,0,0.1);
+  }
+  
+  &:focus{
+    background-color: rgba(0,0,0,0);
+  }
+}

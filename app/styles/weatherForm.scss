@@ -1,0 +1,46 @@
+$text-color: #2F80ED;
+.btn-primary {
+  background-color: white;
+  color: $text-color;
+  border-color: #2F80ED;
+  border-radius: 0;
+  &:hover {
+    background-color: rgb(250,250,250);
+    color: $text-color;
+    border-color: #2A72D3;
+  }
+  &:active,
+  &:focus {
+    background-color: white;
+    color: $text-color;
+    border-color: #2F80ED;
+    box-shadow: 0 0 0 #000;
+    -webkit-box-shadow: 0 0 0 #000;
+  }
+  &:active:focus {
+    background-color: white;
+    color: $text-color;
+    border-color: #2F80ED;
+  }
+}
+
+.btn.active,
+.btn:active {
+  
+}
+
+.form-group {
+  padding-top: 30px;
+}
+
+.form-control {
+  border-radius: 0 !important;
+}
+
+.location{
+  text-transform: capitalize;
+}
+
+.alert{
+  margin-top: 20px;
+}

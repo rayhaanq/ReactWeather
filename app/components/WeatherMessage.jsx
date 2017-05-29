@@ -4,9 +4,9 @@ const React = require('react');
 const WeatherMessage = ({temp, location}) => {
   return (
 
-      <div>
-        It is {temp} in {location}
-      </div>
+      <h2>
+        It is {temp}&#8451; in <span className="location">{location}</span>
+      </h2>
 
     );
 };

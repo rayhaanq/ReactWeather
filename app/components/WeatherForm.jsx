@@ -2,7 +2,6 @@ const React = require('react');
 
 class WeatherForm extends React.Component{
 
-
   constructor(props){
     super(props);
 
@@ -34,8 +33,6 @@ class WeatherForm extends React.Component{
       </form>
 
       </div>
-      
-
     );
   }
 
@@ -51,12 +48,10 @@ class WeatherForm extends React.Component{
 
       this.refs.messageInput.value = "";
 
+      this.props.onNewCity(location.toLowerCase());
+
     }
-
-    this.props.onNewCity(location);
-
   }
-
 }
 
 module.exports = WeatherForm;

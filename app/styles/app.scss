@@ -1,0 +1,18 @@
+@import "./navigation.scss";
+@import "./weatherForm.scss";
+
+$text-color: #1A4681;
+
+h1{
+  font-size: 4em;
+}
+
+h2{
+  font-size: 3em;
+  padding-top: 50px;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  color: $text-color;
+}
