@@ -6,7 +6,8 @@
   background: linear-gradient(to right, #2F80ED, #56CCF2);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border: none;
-  border-radius: 0; }
+  border-radius: 0;
+  margin-bottom: 100px; }
 
 .navbar > .container .navbar-brand, .navbar-default .navbar-nav > li > a {
   color: white; }
@@ -15,7 +16,7 @@
   font-weight: 700; }
 
 .navbar-default .navbar-nav > li > a {
-  opacity: 0.9; }
+  opacity: 0.8; }
   .navbar-default .navbar-nav > li > a:hover {
     opacity: 1;
     color: white; }
@@ -30,5 +31,36 @@
   .navbar-default .navbar-nav > .active > a:focus {
     background-color: white; }
 
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white; }
+
+.navbar-default .navbar-toggle:hover {
+  background-color: rgba(0, 0, 0, 0.1); }
+
+.navbar-default .navbar-toggle:focus {
+  background-color: transparent; }
+
+.btn-primary {
+  background-color: white;
+  color: #1A4681;
+  border-color: #2F80ED;
+  border-radius: 0; }
+  .btn-primary:hover {
+    background-color: white;
+    color: #1A4681;
+    border-color: #56CCF2; }
+  .btn-primary:active, .btn-primary:focus {
+    background-color: white;
+    color: #1A4681;
+    border-color: #2F80ED; }
+  .btn-primary:active:focus {
+    background-color: white;
+    color: #1A4681;
+    border-color: #2F80ED; }
+
+.form-control {
+  border-radius: 0 !important; }
+
 body {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  color: #1A4681; }

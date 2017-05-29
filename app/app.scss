@@ -1,5 +1,9 @@
 @import "./navigation.scss";
+@import "./weatherForm.scss";
+
+$text-color: #1A4681;
 
 body{
   font-family: 'Open Sans', sans-serif;
+  color: $text-color;
 }

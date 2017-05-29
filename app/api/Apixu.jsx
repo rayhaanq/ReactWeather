@@ -18,8 +18,6 @@ module.exports = {
 
         throw new Error("Invalid city name");
       }
-      
-      console.log(response);
 
     }).catch((error) => {
       throw new Error(error.message);

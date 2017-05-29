@@ -17,6 +17,7 @@ class Weather extends React.Component{
 
   }
   render() {
+    
 
     let that = this;
 
@@ -36,7 +37,7 @@ class Weather extends React.Component{
 
     return (
 
-      <div>
+      <div className="text-center">
 
         <WeatherForm onNewCity={this.handleSubmit}/>
 

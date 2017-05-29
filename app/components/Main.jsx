@@ -8,13 +8,6 @@ const Main = (props) => {
 
         <Navigation/>
         
-        <div className="container">
-         
-          <h1>MainComponent</h1>
-          
-        </div>
-        
-
       </div>
 
   );

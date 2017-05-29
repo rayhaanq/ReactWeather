@@ -6,9 +6,9 @@ const Examples = (props) => {
 
     <div>
 
-      <h2>
+      <h1>
         Examples Component
-      </h2>
+      </h1>
 
     </div>
   );

@@ -1,0 +1,33 @@
+$text-color: #1A4681;
+
+.btn-primary{
+  background-color: white;
+  color: $text-color;
+  border-color: #2F80ED;
+  border-radius: 0;
+
+  &:hover{
+    background-color: white;
+    color: $text-color;
+    border-color: #56CCF2;
+  }
+
+  &:active, &:focus{
+    background-color: white;
+    color: $text-color;
+    border-color: #2F80ED;
+  
+  }
+
+  &:active:focus{
+    background-color: white;
+    color: $text-color;
+    border-color: #2F80ED;
+  
+  }
+
+}
+
+.form-control{
+    border-radius: 0 !important;
+  }

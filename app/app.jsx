@@ -16,7 +16,7 @@ ReactDOM.render(
     <div>
       <Route path="/" component={Main}/>
       
-      <div  className="container">
+      <div  className="container text-center">
         <Route exact path="/" component={Weather}/>
       <Route path="/about" component={About}/>
       <Route path="/examples" component={Examples}/>
