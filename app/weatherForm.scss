@@ -1,4 +1,4 @@
-$text-color: #1A4681;
+$text-color: #2F80ED;
 
 .btn-primary{
   background-color: white;
@@ -9,7 +9,7 @@ $text-color: #1A4681;
   &:hover{
     background-color: white;
     color: $text-color;
-    border-color: #56CCF2;
+    border-color: #2A72D3;
   }
 
   &:active, &:focus{
@@ -28,6 +28,9 @@ $text-color: #1A4681;
 
 }
 
+.form-group{
+  padding-top: 50px;
+}
 .form-control{
     border-radius: 0 !important;
   }

@@ -15,18 +15,20 @@ class WeatherForm extends React.Component{
     return (
 
       <div className="text-center">
+
+        <h1 >Get Weather</h1>
         <form onSubmit={this.onFormSubmit}>
   
          <div className="row form-group">
            <div className="col-sm-6 col-sm-offset-3">
-            <input className="form-control form-input" type="text" ref="messageInput" placeholder="Enter city..."></input>
+            <input className="form-control input-lg" type="text" ref="messageInput" placeholder="Enter city..."></input>
 
            </div>
            
          </div>
           
           <div className="row">
-            <button className="btn btn-primary">Get Weather</button>
+            <button className="btn btn-primary btn-lg">Get Weather</button>
 
           </div>
       </form>

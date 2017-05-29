@@ -7,7 +7,7 @@
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border: none;
   border-radius: 0;
-  margin-bottom: 100px; }
+  margin-bottom: 50px; }
 
 .navbar > .container .navbar-brand, .navbar-default .navbar-nav > li > a {
   color: white; }
@@ -42,24 +42,30 @@
 
 .btn-primary {
   background-color: white;
-  color: #1A4681;
+  color: #2F80ED;
   border-color: #2F80ED;
   border-radius: 0; }
   .btn-primary:hover {
     background-color: white;
-    color: #1A4681;
-    border-color: #56CCF2; }
+    color: #2F80ED;
+    border-color: #2A72D3; }
   .btn-primary:active, .btn-primary:focus {
     background-color: white;
-    color: #1A4681;
+    color: #2F80ED;
     border-color: #2F80ED; }
   .btn-primary:active:focus {
     background-color: white;
-    color: #1A4681;
+    color: #2F80ED;
     border-color: #2F80ED; }
+
+.form-group {
+  padding-top: 50px; }
 
 .form-control {
   border-radius: 0 !important; }
+
+h1 {
+  font-size: 4em; }
 
 body {
   font-family: 'Open Sans', sans-serif;
