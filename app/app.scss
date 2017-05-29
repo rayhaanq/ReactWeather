@@ -1,5 +1,5 @@
-$bg-color: green;
+@import "./navigation.scss";
 
 body{
-  background-color: $bg-color;
+  font-family: 'Open Sans', sans-serif;
 }

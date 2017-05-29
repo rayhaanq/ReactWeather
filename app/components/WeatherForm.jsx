@@ -16,13 +16,16 @@ class WeatherForm extends React.Component{
 
     return (
 
-      <form onSubmit={this.onFormSubmit}>
+      <div>
+        <form onSubmit={this.onFormSubmit}>
 
           <input type="text" ref="messageInput" placeholder="Enter city..."></input>
           <button>Get Weather</button>
 
       </form>
 
+      </div>
+      
 
     );
   }

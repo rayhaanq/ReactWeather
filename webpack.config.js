@@ -16,7 +16,7 @@ module.exports = {
     modules: ["node_modules"],
     alias: {
       Main: path.resolve(__dirname, 'app/components/Main.jsx'),
-      Nav: path.resolve(__dirname, 'app/components/Nav.jsx'),
+      Navigation: path.resolve(__dirname, 'app/components/Navigation.jsx'),
       Weather: path.resolve(__dirname, 'app/components/Weather.jsx'),
       About: path.resolve(__dirname, 'app/components/About.jsx'),
       Examples: path.resolve(__dirname, 'app/components/Examples.jsx'),
@@ -41,13 +41,13 @@ module.exports = {
         test: /\.scss$/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
-          use: ['css-loader', "sass-loader"],
+          use: ['css-loader', 'sass-loader'],
           publicPath: "/public"
         })
       }
     ]
   },
-  devtool: 'source-map',
+  devtool: 'cheap-module-eval-source-map',
   plugins: [
   new webpack.ProvidePlugin({
     $: "jquery",

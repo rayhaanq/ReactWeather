@@ -1,15 +1,19 @@
 const React = require('react');
-const Nav = require('Nav');
-
+const Navigation = require('Navigation');
 
 const Main = (props) => {
   return (
 
       <div>
 
-        <Nav/>
-        <h1>MainComponent</h1>
-        {props.children}
+        <Navigation/>
+        
+        <div className="container">
+         
+          <h1>MainComponent</h1>
+          
+        </div>
+        
 
       </div>
 
